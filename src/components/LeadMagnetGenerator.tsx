@@ -23,15 +23,14 @@ const LeadMagnetGenerator = () => {
   });
 
   const handleGenerate = () => {
-    // In a real app, this would call an API
     toast({
-      title: "Generating Lead Magnet",
+      title: "✨ Generating Lead Magnet",
       description: "Your lead magnet is being generated. Please wait...",
     });
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
       <FormSection formData={formData} setFormData={setFormData} onGenerate={handleGenerate} />
       <PreviewSection formData={formData} />
     </div>
